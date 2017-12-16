@@ -8,7 +8,7 @@ public class GameManager1 : MonoBehaviour
     public static int PlayerScore1 = 0;
     public static int PlayerScore2 = 0;
 
-    private LevelManager lm;
+    private LevelManager lvl;
 
     public GUISkin layout;
 
@@ -20,7 +20,7 @@ public class GameManager1 : MonoBehaviour
         PlayerScore1 = 0;
         PlayerScore2 = 0;
         myBall = GameObject.Find("Ball");
-        lm = GameObject.FindObjectOfType<LevelManager>();
+        lvl = GameObject.FindObjectOfType<LevelManager>();
     }
 
     public static void Score (string wallID)
@@ -43,12 +43,12 @@ public class GameManager1 : MonoBehaviour
 
         if (PlayerScore1 == 3)
         {
-            lm.LoadNextLevel();
+            lvl.LoadNextLevel();
             
         }
         else if (PlayerScore2 == 3)
         {
-            lm.LoadNextLevel();
+            lvl.LoadNextLevel();
 
         }
     }
