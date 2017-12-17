@@ -7,8 +7,6 @@ public class Ball : MonoBehaviour
 
     private Paddle1 myPaddle;
 
-   
-
     private Vector3 paddleToBallVector;
 
     private bool hasStarted = false;
